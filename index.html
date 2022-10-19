@@ -5,30 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Code</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div>
-      <p id="first">Lorem ipsum dolor sit amet.</p>
-      <p class="second">Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p class="third">Lorem ipsum dolor sit amet.</p>
+    <div class="div">
+      <p id="first" class="child">Lorem ipsum dolor sit amet.</p>
+      <p class="second child">Lorem ipsum dolor sit amet.</p>
+      <p class="child">Lorem ipsum dolor sit amet.</p>
+      <p class="third child">Lorem ipsum dolor sit amet.</p>
     </div>
 
     <h1>JavaScript</h1>
     <ul class="list"></ul>
 
+    <a href="" class="add__link"></a>
+    <p class="letters casts">Hi</p>
+
+    <!-- CHALLENGE 1 -->
+    <div class="challenge">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eius.
+        error
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        eius.success
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eius.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        eius.success
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        eius.error
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eius.
+      </p>
+    </div>
+
+    <!-- CHALLENGE 2 -->
+    <table>
+      <!-- <thead class="personHeading"> -->
+      <thead class="personHeading">
+        <tr>
+          <th>S/N</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody class="personData"></tbody>
+    </table>
+
+    <ul class="ulList"></ul>
+
+    <!-- 1. add event inline -->
+    <!-- <button class="addItem" onclick="addItem()">Add Items</button> -->
+
+    <!-- 2. add event externally -->
+    <button class="addItem">Add Items</button>
+
+    <!-- form validation -->
+    <form name="newform" id="formnew" method="get" class="form">
+      <label for="name">Name:</label>
+      <input type="text" name="name" />
+      <div id="error_name" class="error"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" />
+      <div id="error_email" class="error"></div>
+
+      <label for="initpass">Initial Password:</label>
+      <input type="password" name="initpass" />
+      <div id="error_initpass" class="error"></div>
+
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" />
+      <div id="error_pass" class="error"></div>
+
+      <!-- <input type="submit" value="Submit" class="btn" /> -->
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <!-- age in days -->
+    <div>
+      <p class="ageDisplay"></p>
+
+      
+         <form name="ageForm" class="form">
+
+           <label for="age">Please Enter Your Birth Year:</label>
+           <input type="text" name="age" />
+           <div id="error_age" class="error"></div>
+           <button class="ageCalc">Age</button>
+           <button class="ageReset">Reset</button>
+          </div>
+        </form>
+
     <!-- 
-    <script>
+      <script>
         /*
         console.log();
         console.log();
         console.log();
         console.log();
         */
-
+        
         // console.log(prompt("please enter your name:"));
-    </script> -->
+      </script> -->
 
     <script src="./javaScriptClass/8_dom.js"></script>
+    <script src="./javaScriptClass/9_formVal.js"></script>
+    <script src="./javaScriptClass/10_ageInDays.js"></script>
   </body>
 </html>
